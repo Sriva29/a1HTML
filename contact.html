@@ -15,5 +15,36 @@
         </ul>
     </header>
     
+    <h1>Contact Us!</h1>
+
+    <form action="process-contact.php" method="post">
+        <label for="first name">First Name</label>
+        <input type="text" name="first name" required>
+        
+        <label for="last name">Last Name</label>
+        <input type="text" name="last name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+
+        <p>Which of these moustache types tickles your fancy?</p>        
+        <input type="checkbox" name="category"> <label for="category">Handlebar</label>
+        <input type="checkbox" name="category"> <label for="category">Walrus</label>
+        <input type="checkbox" name="category"> <label for="category">Van Dyke</label>
+        <input type="checkbox" name="category"> <label for="category">Pencil</label>
+        <input type="checkbox" name="category"> <label for="category">Horseshoe</label>
+        <input type="checkbox" name="category"> <label for="category">Chevron</label>
+        <input type="checkbox" name="category"> <label for="category">Fu Manchu</label>
+
+        <label for="selection">Choose Your Role: </label>
+        <select name="selection" id="">
+            <option value="">Select from Dropdown</option>
+            <option value="writer">Writer</option>
+            <option value="contributor">Contributor</option>
+            <option value="administrator">Administrator</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
