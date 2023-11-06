@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Rye&family=Oldenburg");
+body{
+    font-size: 16px;
+    background-image: -o-linear-gradient();
+    background-color: gray;
+}
+
+header{
+    position: fixed;
+    top: 0;
+}
+
+h1{
+    font-family: Rye;
+    font-size: 1.5em;
+}
+
+h2{
+    font-family: Rye;
+    font-size:1.2em;
+}
+
+h3{
+    font-family:Rye;
+    font-size:1.12em;
+}
+
+article{
+    background-color: white;
+    font-family: Oldenburg;
+}
+
+.featuredArticle{
+    font-size: larger;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+input[required]{
+    border-color: red;
+}
