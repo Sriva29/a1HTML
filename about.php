@@ -16,7 +16,7 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>-->
-    <include src="header.php">
+    <?php include "header.php"; ?>
     <p>This page is about moustaches. We will learn about the rich history of the moustache. How it has helped millions of men keep warm in cold, cold winter months. I moustache you, have you ever seen a cooler site? Happy Movember!🧔🏾</p>
     <footer>
         <p>This site uses cookies. They are all mandatory because who wouldn't want moustache-related cookies in their system. 😊
