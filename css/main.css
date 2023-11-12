@@ -62,9 +62,15 @@ h3{
     font-size:1.12em;
 }
 
+.welcomeBox{
+    display: flex;
+
+}
+
 article{
     background-color: white;
     font-family: Oldenburg;
+    border-radius: 25px;
 }
 
 .featuredArticle{
@@ -75,7 +81,7 @@ article{
     margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    display: flexbox;
+    display: flex;
     justify-content: center;
 }
 
@@ -90,10 +96,9 @@ article{
 }
 
 .articleCategory{
-    display: flexbox;
+    display: flex;
     width: 75%;
     border: 0.5px solid gray;
-    border-radius: 40%;
     padding: 10%;
     margin: 10%;
     overflow: auto;
@@ -110,17 +115,15 @@ article{
 }
 
 footer{
-    position: fixed;
-    bottom: 0;
-    background-color: gray;
+    position: relative;
+    background-color: rgb(25, 25, 25);
+    color: azure;
     display: flex;
     justify-content: center;
-    padding-top: 1px;
-    padding-left: 20px;
-    padding-bottom: 1px;
-    padding-right: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    border-top: 1px solid rgb(70, 37, 48);
+    font-size: 0.8em;
 }
 
 input[required]{

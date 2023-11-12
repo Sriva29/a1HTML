@@ -15,19 +15,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oldenburg">-->
     <title>I Moustache You to Read These</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-        <img src="img/moustache.png" width="100" height="50" alt="A logo of a moustache">
-        <p>Tout a Propos de Moustache</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        </nav>
-    </header>
+<?php include 'header.php'?>
     <main>
     <section class="welcomeBox">
         <h1>Welcome to the fascinating world of moustaches</h1>
@@ -126,14 +115,6 @@
             <td>42</td>
         </tr>
     </table>
-
-    <footer>
-        <p>This site uses cookies. They are all mandatory because who wouldn't want moustache-related cookies in their
-            system. 😊
-            <a href="#">Accept Cookies</a>
-            <!--need to add JS to remove this message from all pages later. For now, leaving it on all pages-->
-        </p>
-    </footer>
+<?php include 'footer.php'?>
 </body>
-
 </html>
