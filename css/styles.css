@@ -1,0 +1,92 @@
+/* Apply Google Font */
+@import url('https://fonts.googleapis.com/css2?family=YourFontName&display=swap');
+body {
+    font-size: 16px;
+    font-family: 'YourFontName', sans-serif;
+    background-color: grey;
+    background-image: url('your-background-image.jpg'); /* Change to your image URL */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    margin-left: 30px; /* 30 units from left */
+}
+
+/* Demonstrate box model */
+div {
+    width: 200px; /* Example width */
+    height: 200px; /* Example height */
+    margin: 10px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+article {
+    background-color: white;
+}
+
+/* Featured articles */
+.featured {
+    font-size: 1.2em; /* Larger font size for featured articles */
+}
+
+/* "Technical" article authors */
+.tech-author {
+    background-color: black;
+    color: white;
+}
+
+/* "Career" article authors */
+.career-author {
+    background-color: purple;
+    color: white;
+}
+
+/* Header and Footer */
+header, footer {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Mobile specific styles */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px; /* Increased font size */
+        line-height: 1.5; /* Increased line spacing */
+    }
+
+    .logo {
+        background-image: url('small-logo.png'); /* Change to your small logo URL */
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Desktop and Tablet styles */
+@media only screen and (min-width: 601px) {
+    .featured {
+        width: 80%;
+    }
+
+    .category {
+        display: flex;
+    }
+
+    .category article {
+        flex: 1;
+    }
+
+    .logo {
+        background-image: url('big-logo.png'); /* Change to your big logo URL */
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Contact form textfields */
+input[type="text"] {
+    border: 2px solid red;
+}

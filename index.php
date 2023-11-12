@@ -107,7 +107,7 @@
             </article>
         </section>
     </section>
-    </main>
+    
     <table class="visitor-table">
         <tr>
             <thead>Site Visitors (Moustache Appreciators)</thead>
@@ -115,6 +115,7 @@
             <td>42</td>
         </tr>
     </table>
+    </main>
 <?php include 'footer.php'?>
 </body>
 </html>
