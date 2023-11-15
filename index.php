@@ -11,38 +11,42 @@
     <link rel="author" content="Srivatsan Rangarajan" href="immnewsnetwork.com" />
     <link rel="icon" href="img/favicons/favicon-32x32.png">
     <link rel="stylesheet" href="css/main.css">
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&family=Oldenburg">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oldenburg">-->
     <title>I Moustache You to Read These</title>
 </head>
+
 <body>
-<?php include 'header.php'?>
-    <main>
-    <section class="welcomeBox">
-        <h1>Welcome to the fascinating world of moustaches</h1>
-        <p>Moustaches celebrate the bond between men and ferocious animals like kitties with whiskers and cute little
-            puppies. This site has been built in anticipation of Movember 2023. Watch the video below on what Movember
-            is from our own moustache king, Nick Offerman:</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8w1p5UI7Siw?si=4z8Pq-vs3CfwCHFf"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-    </section>
-
-    <article class="featuredArticle">
-        <h2>Featured Article: HOW TO BLOW YOUR NOSE WHEN YOU HAVE A MUSTACHE</h2>
-        <p>If there’s one thing that blows about having a mustache — it’s blowing your nose while having a mustache.
-            Mustaches are powerful! They’re masculine and strong and represent virality — until they’re soaked with
-            snot. Look, that manstache is practically a ShamWow for snot rockets. Yeah, it’s gross. This is not news to
-            us. And as far as we know, blowing your nose has been an issue for mustachio’d men since the advent of
-            mucus. Is there any hope? No, not really. But as we make our way through flu season, we have five tips to
-            help keep your mustache a little less mucousy. Read the full article here: <a
-                href="articles/article1.html">read more</a></p>
-    </article>
-
-    <section class="articleCategories">
-
-        <section class="articleCategory">
+    <?php include 'header.php' ?>
+    <main class="flex-body">
+        <div class="body-element">
+        <section class="welcomeBox">
+            <h1>Welcome to the fascinating world of moustaches</h1>
+            <p>Moustaches celebrate the bond between men and ferocious animals like kitties with whiskers and cute
+                little
+                puppies. This site has been built in anticipation of Movember 2023. Watch the video below on what
+                Movember
+                is from our own moustache king, Nick Offerman:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8w1p5UI7Siw?si=4z8Pq-vs3CfwCHFf"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+        </div>
+        <div class="body-element">
+        <article class="featuredArticle">
+            <h2>Featured Article: HOW TO BLOW YOUR NOSE WHEN YOU HAVE A MUSTACHE</h2>
+            <p>If there’s one thing that blows about having a mustache — it’s blowing your nose while having a mustache.
+                Mustaches are powerful! They’re masculine and strong and represent virality — until they’re soaked with
+                snot. Look, that manstache is practically a ShamWow for snot rockets. Yeah, it’s gross. This is not news
+                to
+                us. And as far as we know, blowing your nose has been an issue for mustachio’d men since the advent of
+                mucus. Is there any hope? No, not really. But as we make our way through flu season, we have five tips
+                to
+                help keep your mustache a little less mucousy. Read the full article here: <a
+                    href="articles/article1.html">read more</a></p>
+        </article>
+        </div>
+        <div class="body-element">
+        <section class="article-categories-grid">
             <h2>Moustache Styles</h2>
             <article>
                 <h3>Three stache styles to keep you warm this chilly Movember</h3>
@@ -52,7 +56,7 @@
                     your scarf, your hat, and your boots, why not use nature's winter gear? The mighty stache. Here are
                     three styles guaranteed to keep you warm this winter.</p>
                 <p>View Full Article <a href="articles/article2.html">here</a></p>
-                </article>
+            </article>
             <article>
                 <h3>Get the Horseshoe Moustache in 10 Steps</h3>
                 <p>Gillette</p>
@@ -60,9 +64,6 @@
                 <p>Want a handlebar moustache? No judgements. Here's how you can do just that in 10 steps.</p>
                 <p>View Full Article <a href="articles/article3.html">here</a></p>
             </article>
-        </section>
-
-        <section class="articleCategory">
             <h2>Moustache Care</h2>
             <article>
                 <h3>MUSTACHE CARE: EXPERT TIPS AND GROOMING MAINTENANCE</h3>
@@ -70,10 +71,8 @@
                 <figure><img src="img/article4-img1.jpg" alt="an image of a man with a moustache"></figure>
                 <p>Whether you’re growing one for Movember or simply because they’re on trend at the moment (the
                     moustache is the new beard, don’t you know?) a ‘tache takes time to train and needs some TLC if it’s
-                    to look its best.
-
-                    And who better to give some advice on mustache care and maintenance than ten guys who either have
-                    one or look after ‘taches for a living (and in some cases both)?</p>
+                    to look its best. Read on for some tips from the stache kings:
+                </p>
                 <p>View Full Article <a href="articles/article4.html">here</a></p>
             </article>
             <article>
@@ -83,9 +82,6 @@
                 <p>Buy these products to take care of your moustache</p>
                 <p>View Full Article <a href="articles/article5.html">here</a></p>
             </article>
-        </section>
-
-        <section class="articleCategory">
             <h2>Moustache History</h2>
             <article>
                 <h3>The Moustache to Rule Them All</h3>
@@ -106,16 +102,24 @@
                 <p>View Full Article <a href="articles/article7.html">here</a></p>
             </article>
         </section>
-    </section>
-    
-    <table class="visitor-table">
-        <tr>
-            <thead>Site Visitors (Moustache Appreciators)</thead>
-            <td>Number of Visitors in the Past Six Months</td>
-            <td>42</td>
-        </tr>
-    </table>
+        </div>
+        <div class="body-element">
+            <table class="visitor-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Site Visitors (Moustache Appreciators)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Number of Visitors in the Past Six Months</td>
+                        <td>42</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
-<?php include 'footer.php'?>
+    <?php include 'footer.php' ?>
 </body>
+
 </html>
