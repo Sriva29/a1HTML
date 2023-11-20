@@ -41,8 +41,8 @@
                 us. And as far as we know, blowing your nose has been an issue for mustachio’d men since the advent of
                 mucus. Is there any hope? No, not really. But as we make our way through flu season, we have five tips
                 to
-                help keep your mustache a little less mucousy. Read the full article here: <a
-                    href="articles/article1.html">read more</a></p>
+                help keep your mustache a little less mucousy. Read the full article here: 
+                <a href="articles/article1.html">read more</a></p>
         </article>
         </div>
         <div class="body-element">
@@ -66,7 +66,7 @@
             </article>
             <h2>Moustache Care</h2>
             <article>
-                <h3>MUSTACHE CARE: EXPERT TIPS AND GROOMING MAINTENANCE</h3>
+                <h3>Moustache Care: Expert Tips on Grooming and Maintenance</h3>
                 <p>LEE KYNASTON</p>
                 <figure><img src="img/article4-img1.jpg" alt="an image of a man with a moustache"></figure>
                 <p>Whether you’re growing one for Movember or simply because they’re on trend at the moment (the

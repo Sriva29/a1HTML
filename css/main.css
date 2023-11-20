@@ -19,6 +19,96 @@
 
 
 /* Desktop View*/
+
+/* Header CSS */
+
+/*header-nav > |header-nav-logo-name-links + header-nav-signinup-buttons| (soace-between)
+header-nav-logo-name-links > |header-nav-logo-name + header-nav-links| (space-evenly)
+header-nav-logo-name > space-evenly
+header-nav-links > center
+header-nav-signinup-buttons > space-evenly
+*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: var(--neutral-color);
+    box-shadow: 0px 4px 8px 0px rgba(43, 74, 111, 0.6);
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 0px 10px;
+}
+
+.header-nav-logo-name-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; 
+    
+}
+
+.header-nav-logo-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    font-weight: 100;
+}
+
+.header-nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.header-nav-links ul{
+    list-style: none;
+}
+
+.header-nav-signinup-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--neutral-color);
+}
+
+.header-nav-signinup-buttons a{
+    padding: 5px;
+}
+
+nav p{
+    padding: 0;
+    margin: 0;
+    color: var(--neutral-color);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    margin-left:15px;
+}
+
+nav ul li a{
+    text-decoration-color: var(--neutral-color);
+    color:var(--neutral-color);
+}
+/* End of Header CSS */ 
+
+
 body{
     font-size: var(--body-font-size);
     background-image: url("../img/bgTile.png");
@@ -42,50 +132,14 @@ body{
 }
 
 .flex-body{
+    flex:1;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
 
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--secondary-color);
-    width: 100%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    color: var(--neutral-color);
-}
 
-header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav p{
-    padding: 0;
-    margin: 0;
-    color: var(--neutral-color);
-}
-
-nav ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li{
-    margin-right:30px;
-}
-
-nav ul li a{
-    text-decoration-color: var(--neutral-color);
-    color:var(--neutral-color);
-}
 
 main{
     padding-top: 100px;
@@ -232,13 +286,17 @@ footer a{
 }
 
 
-/*form css*/
+/*css for contact.php*/
 
 .contact-form{
     background-color: var(--accent-color2);
     color: var(--neutral-color);
     padding: 20px;
-    width: minmax(95%,70rem);
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
 }
 
 .container-checkboxes{
@@ -248,8 +306,51 @@ footer a{
     align-items:baseline;
 }
 
+#contact-heading{
+    border: 2px solid transparent;
+    background-color: var(--accent-color2);
+    padding: 20px 5px 5px 20px;
+    margin-bottom: 0px;
+    color: var(--neutral-color);
+    font-weight: 500;
+    text-align: center;
+}
+
 input[required]{
     border-color: var(--primary-color);
+}
+
+/* css for about.php */
+.about-container{
+ background-color: var(--accent-color2);
+ border: 1px solid var(--secondary-color);
+ border-radius: 25px;
+ padding: 50px;
+ width: var(--body-element-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+
+/* login/signup page */
+
+.login-signup-wrapper{
+    width: var(--body-element-width);
+    height: 500px;
+    background-color: var(--accent-color2);
+    border: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.login-signup-form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items:flex-start;    
 }
 
 /* Tablet View */

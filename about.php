@@ -8,20 +8,22 @@
     <title>About Moustaches</title>
 </head>
 <body>
-    <!--<header>
-        <img src="img/moustache.png" width="100" height="50" alt="A logo of a moustache">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </header>-->
     <?php include "header.php"; ?>
-    <p>This page is about moustaches. We will learn about the rich history of the moustache. How it has helped millions of men keep warm in cold, cold winter months. I moustache you, have you ever seen a cooler site? Happy Movember!🧔🏾</p>
-    <footer>
-        <p>This site uses cookies. They are all mandatory because who wouldn't want moustache-related cookies in their system. 😊
-            <a href="#">Accept Cookies</a>
-        </p>
-    </footer>
+    <main class="flex-body">
+    <div class="about-container">
+    <div class="body-element">
+        <img src="img/cold-freeze.gif" alt="image of Ron Swanson from Parks and Rec freezing and wearing warm clothes. His moustache is prominently visible.">
+    </div>
+    
+    <div class="body-element">
+    <article class="about-text">
+        <p>This page is about moustaches. We will learn about the rich history of the moustache. 
+        How it has helped millions of men keep warm in cold, cold winter months. 
+        I moustache you, have you ever seen a cooler site? Happy Movember!🧔🏾</p>
+    </article>
+    </div>
+    </div>
+    <?php include "footer.php"; ?>
+    </main>
 </body>
 </html>

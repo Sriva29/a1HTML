@@ -4,27 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="This article is about taking care of your moustache by making sure you blow your nose effectively without compromising your stache integrity.">
-    <meta name="keywords"
-        content="moustache, blow my nose, moustache getting in the way of my nose blowing, moustache care, moustache tips">
-    <link rel="author" content="Mike Lawson"
-        href="https://www.beardbrand.com/blogs/urbanbeardsman/how-to-blow-your-nose-when-you-have-a-mustache" />
     <link rel="icon" href="../img/favicons/favicon-32x32.png">
-    <title>Article 1: How to blow your nose when you have a moustache</title>
+    <?php include ("connect.php");
+
+    $articleId = $_GET["articleId"];
+    $stmt = $pdo->prepare("SELECT * FROM Articles WHERE ArticleID = $articleId");
+    $stmt->execute();
+    $article = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    ?>
+    <meta name="description"
+        content=<?=$article['metaDesc'];?> <!--"This article is about taking care of your
+         moustache by making sure you blow your nose effectively without compromising your stache integrity.">-->
+    <meta name="keywords"
+        content=<?= $article['metaKeys'];?>
+        "moustache, blow my nose, moustache getting in the way of my nose blowing, moustache care, moustache tips">
+    
+    <link rel="author" content=<?php $article['author'];?>"Mike Lawson" href=<?=$article['authorLink'];?>"https://www.beardbrand.com/blogs/urbanbeardsman/how-to-blow-your-nose-when-you-have-a-mustache" />
+    
+    <title><?=$article['title'];?> How to blow your nose when you have a moustache</title>
 </head>
 
 <body>
-    <header>
-        <img src="../img/moustache.png" width="100" height="50" alt="A logo of a moustache">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </header>
-    <h1 class="article-title">HOW TO BLOW YOUR NOSE WHEN YOU HAVE A MUSTACHE</h1>
-    <p>by Mike Lawson</p>
+<?php include ("header.php");?>
+<h1 class="article-title"><?=$article['title'];?>HOW TO BLOW YOUR NOSE WHEN YOU HAVE A MUSTACHE</h1>
+<p><?php $article['author'];?>by Mike Lawson</p>
     <article>
         <h2>1. Find Some Privacy</h2>
         <p>Nothing is redeeming about blowing your nose. Okay, it’s slightly better than just letting your nose drip
