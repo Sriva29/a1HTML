@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Rye&family=Oldenburg");
+
+/*variables*/
+:root {
+    /*colors*/
+    --primary-color: #A32B2B; /* Deep Red */
+    --secondary-color: #2B4A6F; /* Navy Blue */
+    
+    --accent-color1: #7DA2B8; /* Soft Blue */
+    --accent-color2: #D14242; /* Crimson Red */
+    
+    --neutral-color: #FFFFFF; /* Classic White */
+    --background-color: grey;
+
+    /*size*/
+    --body-font-size: 16px; /* Default font size */
+    --body-element-width: min(80%, 70rem);
+}
+
+
+/* Desktop View*/
+
+/* Header CSS */
+
+/*header-nav > |header-nav-logo-name-links + header-nav-signinup-buttons| (soace-between)
+header-nav-logo-name-links > |header-nav-logo-name + header-nav-links| (space-evenly)
+header-nav-logo-name > space-evenly
+header-nav-links > center
+header-nav-signinup-buttons > space-evenly
+*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: var(--neutral-color);
+    box-shadow: 0px 4px 8px 0px rgba(43, 74, 111, 0.6);
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 0px 10px;
+}
+
+.header-nav-logo-name-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; 
+    
+}
+
+.header-nav-logo-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    font-weight: 100;
+}
+
+.header-nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.header-nav-links ul{
+    list-style: none;
+}
+
+.header-nav-signinup-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--neutral-color);
+}
+
+.header-nav-signinup-buttons a{
+    padding: 5px;
+}
+
+nav p{
+    padding: 0;
+    margin: 0;
+    color: var(--neutral-color);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    margin-left:15px;
+}
+
+nav ul li a{
+    text-decoration-color: var(--neutral-color);
+    color:var(--neutral-color);
+}
+/* End of Header CSS */ 
+
+
+body{
+    font-size: var(--body-font-size);
+    background-image: url("../img/bgTile.png");
+    background-color: var(--background-color);
+    background-position: 0%;
+    filter: 60%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    border-radius: 5px;
+    border: 5px black;
+}
+
+.body-element{
+    width: var(--body-element-width);
+}
+
+.flex-body{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+
+
+main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1{
+    font-family: Rye;
+    font-size: 1.5em;
+    padding-left: 30pt;
+}
+
+h2{
+    font-family: Rye;
+    font-size:1.2em;
+    padding-left: 30pt;
+}
+
+h3{
+    font-family:Rye;
+    font-size:1.12em;
+    padding-left: 30pt;
+}
+
+.welcomeBox{
+    background-color: var(--accent-color1);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 520px;
+    text-align: center;
+    margin-inline: auto;
+    padding-block: 2rem;
+    /*width: min(85%, 70rem);*/
+    padding: 25px;
+    border-radius: 25px;
+}
+.welcomeBox h1{
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+.welcomeBox p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+article{
+    /* background-color: var(--accent-color1); */
+    background-color: var(--neutral-color);
+    font-family: Oldenburg;
+    /* width: 250px;
+    height: 6%; */
+    padding: 5px 10px 0px 10px;
+    border-radius: 25px;
+}
+
+.featuredArticle{
+    font-size: 1.1em;
+    border: solid black 1px;
+    background-color: var(--neutral-color);
+    width: 90%;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.moustache-history{
+    background-color: black;
+    color: white;
+}
+
+.moustache-care{
+    background-color: purple;
+    color: white;
+}
+
+img{
+    height: 100px;
+    width: 150px;
+}
+
+.article-categories-flex{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(3,1fr);
+    /*grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    /*grid-template-rows: repeat(auto-fit, minmax(300px,1fr));*/
+    /*grid-template-rows: repeat(3, 1fr);*/
+    
+    padding: 25px;
+    background-color: var(--neutral-color);
+    border-radius: 25px;
+}
+
+.articleCategory{
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    width: 75%; */
+    border: 5px solid var(--primary-color);
+    padding: 10%;
+    margin: 10%;
+}
+
+.article-categories-flex img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--neutral-color);
+    text-align: center;
+}
+
+footer a{
+    color: var(--neutral-color);
+}
+
+/*Table css*/
+
+.visitor-table{
+    background-color: var(--accent-color2);
+    color:var(--neutral-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+    display: table-caption;
+    table-layout: auto;
+    padding: auto;
+}
+
+.visitor-table th, .visitor-table td{
+    border: 1px solid black;
+    padding: 10 px;
+    text-align: justify;
+}
+
+.visitor-table thead{
+    background-color: var(--accent-color2);
+}
+
+
+/*css for contact.php*/
+
+.contact-form{
+    background-color: var(--accent-color1);
+    color: var(--neutral-color);
+    padding: 20px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.container-checkboxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:baseline;
+    border-radius: 0px 0px 25px 25px;
+}
+
+#contact-heading{
+    border: 2px solid transparent;
+    border-radius: 25px 25px 0px 0px;
+    background-color: var(--accent-color2);
+    padding: 20px 5px 5px 20px;
+    margin-bottom: 0px;
+    color: var(--neutral-color);
+    font-weight: 500;
+    text-align: center;
+}
+
+input[required]{
+    border: 2px solid red;
+}
+
+/* css for about.php */
+.about-container{
+ background-color: var(--accent-color2);
+ border: 1px solid var(--secondary-color);
+ border-radius: 25px;
+ padding: 50px;
+ width: var(--body-element-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+
+/* login/signup page */
+
+.login-signup-wrapper{
+    width: var(--body-element-width);
+    height: 500px;
+    background-color: var(--accent-color2);
+    border: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.login-signup-form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items:flex-start;    
+}
+
+/* Tablet View */
+
+/* Mobile View */
+
+
+@media only screen and (max-width: 768px) {
+    
+    p {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+
+    body{
+        width: 100%;
+        display: block;
+    }
+    header, footer {
+        width: 100%;
+    }
+
+    .featuredArticle {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .article-categories-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .article-categories-flex div {
+        width: 80%;
+        padding: 0 10px;
+    }
+
+    .header-nav-logo {
+        width: 50px;
+        height: auto;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) {
+    
+    header, footer {
+        width: 100%;
+    }
+
+    .featuredArticle {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .article-categories-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .article-categories-flex div {
+        width: 80%;
+        padding: 0 10px;
+    }
+
+    .header-nav-logo {
+        width: 150px;
+        height: auto;
+    }
+}

@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Sign Up</title>
+
 </head>
 <body>
 <?php include("header.php");?>
 <main>
+<div class="login-signup-wrapper">
+    <div>
+    <h1>Login</h1>
+    <h2>Come grab a chair and join us.</h2>
+    </div>
+    <form class="login-signup-form" action="signup-process.php" method="post">
+    
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
 
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <input type="submit" value="Sign Up">
 
+    </form>
+</div>
 </main>
 
 <?php include("footer.php");?>    

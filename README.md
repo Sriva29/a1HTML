@@ -1,3 +1,3 @@
 # a1HTML
 
-This is a HTML assignment for college.
+This is a Web assignment for college.

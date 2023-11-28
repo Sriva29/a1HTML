@@ -1,3 +1,9 @@
+<?php session_start(); 
+include("connect.php");
+$stmt = $pdo->prepare("SELECT * FROM `about`");
+$stmt->execute();
+$about = $stmt->fetch(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicons/favicon-32x32.png">
     <link rel="stylesheet" href="css/main.css">
-    <title>About Moustaches</title>
+    <title><?=$about["aboutTitle"]?></title>
 </head>
 <body>
     <?php include "header.php"; ?>
@@ -17,9 +23,8 @@
     
     <div class="body-element">
     <article class="about-text">
-        <p>This page is about moustaches. We will learn about the rich history of the moustache. 
-        How it has helped millions of men keep warm in cold, cold winter months. 
-        I moustache you, have you ever seen a cooler site? Happy Movember!🧔🏾</p>
+    <?=$about["aboutContent"]?>
+        
     </article>
     </div>
     </div>

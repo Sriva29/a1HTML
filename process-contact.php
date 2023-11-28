@@ -1,3 +1,6 @@
+<?php if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}?>
 <?php
 echo"Hola, amigo. Thanks for filling the form.";
 
