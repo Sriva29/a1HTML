@@ -1,8 +1,6 @@
 <?php if (session_status() == PHP_SESSION_NONE) {
     session_start();
-}?>
-<?php
-echo"Hola, amigo. Thanks for filling the form.";
+}
 
 //receive POST variables
 $name = $_POST["name"];
@@ -37,6 +35,10 @@ $stmt = $pdo->prepare("INSERT INTO `contact` (`name`, `email`, `role`, `handleba
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
 //execute
-$stmt->execute([$name, $email, $role, $handlebar, $walrus, $vanDyke, $pencil, $horseshoe, $chevron, $fuManchu]);
+if($stmt->execute([$name, $email, $role, $handlebar, $walrus, $vanDyke, $pencil, $horseshoe, $chevron, $fuManchu])){
+    echo '{"success":"true"}';
+} else {
+    echo '{"success":"false"}';
+};
 
 ?>

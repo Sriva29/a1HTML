@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2023 at 03:25 AM
+-- Generation Time: Nov 28, 2023 at 06:02 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -119,7 +119,32 @@ CREATE TABLE `contact` (
 
 INSERT INTO `contact` (`personId`, `name`, `email`, `role`, `handlebar`, `walrus`, `vanDyke`, `pencil`, `horseshoe`, `chevron`, `fuManchu`) VALUES
 (17, 'Srivatsan Rangarajan', 'srivatsan.official@gmail.com', 'lurker', 0, 0, 1, 0, 0, 0, 0),
-(18, 'Srivatsan Rangarajan', 'srivatsan.official@gmail.com', 'administrator', 0, 0, 1, 1, 0, 0, 0);
+(18, 'Srivatsan Rangarajan', 'srivatsan.official@gmail.com', 'administrator', 0, 0, 1, 1, 0, 0, 0),
+(19, 'Srivatsan Rangarajan', 'srivatsan.official@gmail.com', 'lurker', 1, 1, 1, 1, 1, 1, 1),
+(20, 'sdf', 'sdfs@sdfs', 'contributor', 1, 1, 1, 1, 1, 1, 1),
+(21, 'sdfds', 'sdfdsf@sdfs', 'lurker', 1, 1, 1, 1, 1, 1, 1),
+(22, 'sdfds', 'sdfdsf@sdfs', 'lurker', 1, 1, 1, 1, 1, 1, 1),
+(23, 'ajack', 'a@jax', 'contributor', 1, 1, 1, 1, 1, 1, 1),
+(24, 'ajack', 'a@jaxss', 'contributor', 1, 1, 1, 1, 1, 1, 1),
+(25, 'finalAjax', 'final@ajax', 'administrator', 1, 1, 1, 1, 1, 1, 1),
+(26, 'finalAjax2', 'final@ajax2', 'administrator', 1, 1, 1, 1, 1, 1, 1),
+(27, 'finalAjax2', 'final@ajax2', 'administrator', 1, 1, 1, 1, 1, 1, 1),
+(28, 'finalAjax3', 'final@ajax3', 'administrator', 1, 1, 1, 1, 1, 1, 1),
+(29, 'finalAjax3', 'final@ajax3', 'administrator', 1, 1, 1, 1, 1, 1, 1),
+(30, 'finalAjax3', 'final@ajax3', 'administrator', 1, 1, 1, 1, 1, 1, 1),
+(31, 'networktest', 'test@network', 'contributor', 0, 0, 0, 1, 0, 0, 0),
+(32, 'networktest', 'test@network', 'contributor', 0, 0, 0, 1, 0, 0, 0),
+(33, 'networktest', 'test@network', 'contributor', 0, 0, 0, 1, 0, 0, 0),
+(34, 'networktest', 'test@network', 'contributor', 0, 0, 0, 1, 1, 0, 0),
+(35, 'ssdf', 'sdf@sdfs', 'lurker', 0, 0, 0, 1, 0, 0, 0),
+(36, 'ssdf', 'sdf@sdfs', 'lurker', 0, 0, 0, 1, 1, 0, 0),
+(37, 'ssdf', 'sdf@sdfs', 'lurker', 0, 0, 0, 1, 1, 0, 0),
+(38, '4', '4@4', 'lurker', 0, 0, 0, 1, 1, 0, 0),
+(39, 'final test!', 'final@final', 'lurker', 0, 0, 0, 1, 1, 0, 0),
+(40, 'final test!', 'final@final', 'lurker', 0, 0, 0, 1, 1, 0, 0),
+(41, 'sdf', 's@s', 'contributor', 0, 0, 0, 1, 0, 0, 0),
+(42, 'sdf', 's@s', 'contributor', 0, 0, 0, 1, 0, 0, 0),
+(43, 'sdf', 's@s', 'contributor', 0, 0, 0, 1, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -239,7 +264,7 @@ ALTER TABLE `articles`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `personId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `personId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `likes`
